@@ -49,6 +49,25 @@ This project was generated using Angular CLI version 19.2.6.
 - `POST /api/messages` - Send new message
 - `PUT /api/messages/:id` - Update message
 
+## Deployment
+
+### Production Build
+```bash
+ng build --configuration production
+```
+
+### Docker Deployment
+```bash
+docker build -t socialhub-web .
+docker run -p 3000:3000 socialhub-web
+```
+
+### Environment Variables
+- `NODE_ENV`: Set to 'production' for production
+- `PORT`: Server port (default: 3000)
+- `MONGODB_URI`: MongoDB connection string
+- `JWT_SECRET`: JWT signing secret
+
 ## Project Structure
 
 ```
