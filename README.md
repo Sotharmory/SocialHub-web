@@ -12,6 +12,20 @@ This project was generated using Angular CLI version 19.2.6.
 - **AI Integration**: Smart features powered by AI
 - **Responsive Design**: Mobile-first approach
 
+## Project Structure
+
+```
+src/
+├── app/                    # Main application code
+│   ├── auth/              # Authentication components
+│   ├── dashboard/         # Dashboard and main pages
+│   ├── core/              # Core services and guards
+│   └── features/          # Feature modules
+├── assets/                # Static assets
+├── environments/          # Environment configuration
+└── styles.css            # Global styles
+```
+
 ## Development server
 
 To start a local development server, run:
