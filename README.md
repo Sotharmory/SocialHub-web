@@ -26,6 +26,28 @@ src/
 └── styles.css            # Global styles
 ```
 
+## Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Tson28/SocialHub-web.git
+   cd SocialHub-web
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   - Copy `.env.example` to `.env`
+   - Configure your database and API keys
+
+4. **Start the development server**
+   ```bash
+   ng serve
+   ```
+
 ## Development server
 
 To start a local development server, run:
