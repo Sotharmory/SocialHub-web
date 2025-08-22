@@ -337,3 +337,38 @@ A: Yes, Docker support is included. Use the provided Docker commands for contain
 
 **Q: How do I scale SocialHub?**
 A: SocialHub is designed to be scalable. Use load balancers, database clustering, and CDN for high-traffic scenarios.
+
+## Acknowledgments
+
+### Special Thanks
+- 🙏 **Angular Team** - For the amazing framework
+- 🎯 **MongoDB Team** - For the robust database solution
+- ⚡ **Socket.io Team** - For real-time communication capabilities
+- 🤖 **Groq** - For AI integration support
+
+### Contributors
+- 👨‍💻 **Nguyễn Thái Sơn** - Lead Developer & Project Architect
+- 👩‍💻 **Winnie Pham** - Frontend Developer & UI/UX Designer
+
+### Inspiration
+- 📚 **Open Source Community** - For countless libraries and tools
+- 🌟 **Social Media Platforms** - For UX/UI inspiration
+- 💡 **Charity Organizations** - For fundraising feature ideas
+
+### Tools & Libraries
+- **Frontend**: Angular, TypeScript, RxJS, Angular Material
+- **Backend**: Node.js, Express.js, Socket.io, JWT
+- **Database**: MongoDB, Mongoose
+- **AI**: Groq API, Python
+- **Development**: Angular CLI, npm, Git
+
+### Beta Testers
+- 🧪 Thanks to all beta testers who helped improve the platform
+- 🐛 Bug reporters who made the platform more stable
+- 💡 Feature requesters who shaped the roadmap
+
+---
+
+⭐ **Star this repository if you find it helpful!**
+
+Made with ❤️ by the SocialHub Team
