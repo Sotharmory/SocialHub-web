@@ -245,6 +245,31 @@ npm install
 - 💬 Simple messaging
 - 📱 Responsive design
 
+## Roadmap
+
+### 🚀 Upcoming Features (v3.0.0)
+- [ ] **Video Calls** - Integrate video calling functionality
+- [ ] **Stories Feature** - Instagram-like stories
+- [ ] **Live Streaming** - Real-time broadcasting
+- [ ] **Advanced Analytics** - User engagement metrics
+- [ ] **Multi-language Support** - Internationalization
+- [ ] **Dark Mode** - Theme customization
+- [ ] **Push Notifications** - Mobile app notifications
+
+### 🔮 Future Plans (v4.0.0+)
+- [ ] **Mobile App** - React Native implementation
+- [ ] **Blockchain Integration** - Cryptocurrency donations
+- [ ] **AI Moderation** - Automated content moderation
+- [ ] **Marketplace** - Buy/sell features
+- [ ] **Events System** - Create and manage events
+- [ ] **Advanced Search** - Elasticsearch integration
+
+### 🎯 Long-term Vision
+- Global social platform for meaningful connections
+- Leading fundraising platform for social causes
+- AI-powered content discovery and recommendations
+- Sustainable and ethical social media alternative
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
