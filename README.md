@@ -137,6 +137,62 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Troubleshooting
+
+### Common Issues & Solutions
+
+#### 1. MongoDB Connection Error
+```
+Error: MongoNetworkError: failed to connect to server
+```
+**Solution:**
+- Ensure MongoDB service is running
+- Check if port 27017 is available
+- Verify MONGODB_URI in .env file
+
+#### 2. Angular CLI Not Found
+```
+ng: command not found
+```
+**Solution:**
+```bash
+npm install -g @angular/cli@latest
+```
+
+#### 3. Port Already in Use
+```
+Error: listen EADDRINUSE: address already in use :::4200
+```
+**Solution:**
+```bash
+ng serve --port 4201
+# or kill the process using the port
+lsof -ti:4200 | xargs kill -9
+```
+
+#### 4. Node Modules Issues
+```
+Module not found errors
+```
+**Solution:**
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+#### 5. JWT Token Expired
+```
+401 Unauthorized errors
+```
+**Solution:**
+- Clear browser localStorage
+- Log in again to get fresh token
+
+### Getting Help
+- Check the [Issues](https://github.com/Tson28/SocialHub-web/issues) page
+- Contact the development team
+- Review the documentation
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
