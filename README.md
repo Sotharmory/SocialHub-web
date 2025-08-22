@@ -1,190 +1,28 @@
-# AleySocialMedia
+# SocialHub - Aley Social Media Platform
 
-This project was generated using Angular CLI version 19.2.6.
+🚀 A modern, feature-rich social media platform built with Angular and Node.js
 
-## Features
+## Project Overview
 
-- **User Authentication**: Secure login and registration system
-- **Social Media Posts**: Create, edit, and interact with posts
-- **Real-time Messaging**: Instant messaging between users
-- **Fundraising Campaigns**: Support for charitable causes
-- **Admin Dashboard**: Comprehensive admin panel for management
-- **AI Integration**: Smart features powered by AI
-- **Responsive Design**: Mobile-first approach
+SocialHub is a comprehensive social media application that combines traditional social networking features with innovative fundraising capabilities and AI-powered interactions. Built with modern web technologies, it provides users with a seamless experience for connecting, sharing, and supporting meaningful causes.
 
-## Technology Stack
+### Key Highlights
+- 🔐 **Secure Authentication** - JWT-based authentication system
+- 💬 **Real-time Messaging** - Instant communication with Socket.io
+- 📱 **Responsive Design** - Mobile-first approach
+- 🤖 **AI Integration** - Smart features powered by Groq API
+- 💰 **Fundraising Platform** - Support charitable causes
+- 👥 **Social Features** - Posts, friends, notifications
 
-### Frontend
-- **Angular 19**: Latest Angular framework
-- **TypeScript**: Type-safe JavaScript
-- **SCSS/CSS**: Advanced styling
-- **RxJS**: Reactive programming
-
-### Backend
-- **Node.js**: Server runtime
-- **Express.js**: Web framework
-- **MongoDB**: NoSQL database
-- **Socket.io**: Real-time communication
-
-### AI & ML
-- **Groq API**: AI model integration
-- **Python**: AI processing scripts
-
-## Security Features
-
-### Authentication & Authorization
-- **JWT Tokens**: Secure token-based authentication
-- **Password Hashing**: bcrypt for password security
-- **Role-based Access**: Admin, moderator, and user roles
-- **Session Management**: Secure session handling
-
-### Data Protection
-- **Input Validation**: Sanitize all user inputs
-- **SQL Injection Prevention**: Parameterized queries
-- **XSS Protection**: Content Security Policy
-- **CSRF Protection**: Cross-site request forgery prevention
-
-### API Security
-- **Rate Limiting**: Prevent API abuse
-- **CORS Configuration**: Controlled cross-origin access
-- **Request Validation**: Validate all incoming requests
-- **Error Handling**: Secure error messages
-
-## Performance Optimization
-
-### Frontend Optimization
-- **Lazy Loading**: Route-based code splitting
-- **Tree Shaking**: Remove unused code
-- **OnPush Strategy**: Optimize change detection
-- **Virtual Scrolling**: Handle large lists efficiently
-
-### Backend Optimization
-- **Database Indexing**: Optimize MongoDB queries
-- **Caching**: Redis for session storage
-- **Compression**: Gzip compression enabled
-- **Connection Pooling**: Efficient database connections
-
-### Build Optimization
-- **Bundle Analysis**: Monitor bundle size
-- **Minification**: Compress production builds
-- **Source Maps**: Debug production issues
-
-## API Documentation
-
-### Authentication Endpoints
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `POST /api/auth/forgot-password` - Password reset
-
-### Posts Endpoints
-- `GET /api/posts` - Get all posts
-- `POST /api/posts` - Create new post
-- `PUT /api/posts/:id` - Update post
-- `DELETE /api/posts/:id` - Delete post
-
-### Messages Endpoints
-- `GET /api/messages` - Get conversation messages
-- `POST /api/messages` - Send new message
-- `PUT /api/messages/:id` - Update message
-
-## Testing
-
-### Unit Tests
-```bash
-ng test                    # Run unit tests
-ng test --watch           # Run tests in watch mode
-ng test --code-coverage   # Generate coverage report
-```
-
-### E2E Tests
-```bash
-ng e2e                    # Run end-to-end tests
-ng e2e --watch           # Run E2E tests in watch mode
-```
-
-### Test Coverage
-- **Unit Tests**: 85%+ coverage required
-- **Integration Tests**: All API endpoints covered
-- **E2E Tests**: Critical user flows tested
-
-## Deployment
-
-### Production Build
-```bash
-ng build --configuration production
-```
-
-### Docker Deployment
-```bash
-docker build -t socialhub-web .
-docker run -p 3000:3000 socialhub-web
-```
-
-### Environment Variables
-- `NODE_ENV`: Set to 'production' for production
-- `PORT`: Server port (default: 3000)
-- `MONGODB_URI`: MongoDB connection string
-- `JWT_SECRET`: JWT signing secret
-
-## Project Structure
-
-```
-src/
-├── app/                    # Main application code
-│   ├── auth/              # Authentication components
-│   ├── dashboard/         # Dashboard and main pages
-│   ├── core/              # Core services and guards
-│   └── features/          # Feature modules
-├── assets/                # Static assets
-├── environments/          # Environment configuration
-└── styles.css            # Global styles
-```
-
-## Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Tson28/SocialHub-web.git
-   cd SocialHub-web
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   - Copy `.env.example` to `.env`
-   - Configure your database and API keys
-
-4. **Start the development server**
-   ```bash
-   ng serve
-   ```
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Style
-
-- Follow Angular style guide
-- Use meaningful commit messages
-- Write tests for new features
-- Update documentation as needed
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
 ## Development server
 
 To start a local development server, run:
 
+```bash
 ng serve
+```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
@@ -192,34 +30,44 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
+```bash
 ng generate component component-name
+```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
+```bash
 ng generate --help
+```
 
 ## Building
 
 To build the project run:
 
+```bash
 ng build
+```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
 ## Running unit tests
 
-To execute unit tests with the Karma test runner, use the following command:
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
+```bash
 ng test
+```
 
 ## Running end-to-end tests
 
 For end-to-end (e2e) testing, run:
 
+```bash
 ng e2e
+```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the Angular CLI Overview and Command Reference page.
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
