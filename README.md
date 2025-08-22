@@ -299,3 +299,41 @@ SOFTWARE.
 ### Business Inquiries
 - 💼 **Partnerships**: partnerships@socialhub.dev
 - 🏢 **Enterprise**: enterprise@socialhub.dev
+
+## FAQ
+
+### General Questions
+
+**Q: What is SocialHub?**
+A: SocialHub is a modern social media platform that combines traditional social networking with fundraising capabilities and AI-powered features.
+
+**Q: Is SocialHub free to use?**
+A: Yes, SocialHub is open-source and free to use. You can deploy your own instance or contribute to the project.
+
+**Q: What technologies does SocialHub use?**
+A: SocialHub uses Angular 19 for the frontend, Node.js with Express for the backend, MongoDB for data storage, and Socket.io for real-time features.
+
+### Technical Questions
+
+**Q: How do I set up the development environment?**
+A: Follow the installation guide in this README. Make sure you have Node.js, MongoDB, and Angular CLI installed.
+
+**Q: Can I customize the UI?**
+A: Yes! The UI is built with modular components and SCSS. You can easily customize colors, layouts, and styling.
+
+**Q: How do I add new features?**
+A: Follow the contributing guidelines. Create a feature branch, implement your feature, write tests, and submit a pull request.
+
+**Q: Is there API documentation?**
+A: Yes, API documentation is available in the repository and will be expanded with detailed endpoint documentation.
+
+### Deployment Questions
+
+**Q: Can I deploy SocialHub to production?**
+A: Yes, follow the deployment section for production build instructions. Make sure to configure environment variables properly.
+
+**Q: Does SocialHub support Docker?**
+A: Yes, Docker support is included. Use the provided Docker commands for containerized deployment.
+
+**Q: How do I scale SocialHub?**
+A: SocialHub is designed to be scalable. Use load balancers, database clustering, and CDN for high-traffic scenarios.
