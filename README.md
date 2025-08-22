@@ -193,6 +193,36 @@ npm install
 - Contact the development team
 - Review the documentation
 
+## Changelog
+
+### Version 2.1.0 (Latest)
+- ✨ Enhanced AI integration with Groq API
+- 🔧 Improved authentication system
+- 🎨 Updated UI/UX design
+- 🐛 Fixed messaging real-time updates
+- 📱 Better mobile responsiveness
+
+### Version 2.0.0
+- 🚀 Major refactoring to Angular 19
+- 💰 Added fundraising campaign features
+- 🔒 Enhanced security measures
+- 📊 Admin dashboard improvements
+- 🌐 Socket.io integration for real-time features
+
+### Version 1.5.0
+- 👥 Friend system implementation
+- 🔍 Advanced search functionality
+- 📧 Email notification system
+- 🖼️ Image upload capabilities
+- 🎯 Performance optimizations
+
+### Version 1.0.0
+- 🎉 Initial release
+- 👤 User authentication
+- 📝 Basic posting system
+- 💬 Simple messaging
+- 📱 Responsive design
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
