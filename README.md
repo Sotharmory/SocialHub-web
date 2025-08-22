@@ -14,6 +14,28 @@ SocialHub is a comprehensive social media application that combines traditional 
 - 💰 **Fundraising Platform** - Support charitable causes
 - 👥 **Social Features** - Posts, friends, notifications
 
+## Screenshots
+
+### 🏠 Dashboard
+![Dashboard](https://via.placeholder.com/800x400/4f46e5/ffffff?text=SocialHub+Dashboard)
+*Main dashboard with posts feed and navigation*
+
+### 💬 Messaging
+![Messaging](https://via.placeholder.com/800x400/06b6d4/ffffff?text=Real-time+Messaging)
+*Real-time messaging interface with conversation history*
+
+### 💰 Fundraising
+![Fundraising](https://via.placeholder.com/800x400/10b981/ffffff?text=Fundraising+Campaigns)
+*Fundraising campaigns with progress tracking*
+
+### 👤 Profile
+![Profile](https://via.placeholder.com/800x400/f59e0b/ffffff?text=User+Profile)
+*User profile management and customization*
+
+### 📱 Mobile View
+![Mobile](https://via.placeholder.com/400x600/8b5cf6/ffffff?text=Mobile+Responsive)
+*Mobile-responsive design for all devices*
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
 ## Prerequisites
