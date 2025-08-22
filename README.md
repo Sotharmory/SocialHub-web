@@ -256,3 +256,24 @@ SOFTWARE.
 - **Node.js**: MIT License
 - **MongoDB**: Server Side Public License (SSPL)
 - **Socket.io**: MIT License
+
+## Contact & Support
+
+### Development Team
+- **Lead Developer**: Nguyễn Thái Sơn (@Tson28)
+- **Frontend Developer**: Winnie Pham (@phamthangph13)
+
+### Contact Information
+- 📧 **Email**: support@socialhub.dev
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Tson28/SocialHub-web/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/Tson28/SocialHub-web/discussions)
+- 📱 **Social Media**: @SocialHubDev
+
+### Community
+- 💬 **Discord**: [Join our community](https://discord.gg/socialhub)
+- 📚 **Documentation**: [Wiki](https://github.com/Tson28/SocialHub-web/wiki)
+- 🎓 **Tutorials**: [YouTube Channel](https://youtube.com/@socialhub)
+
+### Business Inquiries
+- 💼 **Partnerships**: partnerships@socialhub.dev
+- 🏢 **Enterprise**: enterprise@socialhub.dev
