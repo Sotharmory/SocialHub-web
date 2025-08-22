@@ -356,6 +356,38 @@ npm install
 - **Performance Alerts**: Threshold-based alerting
 - **Capacity Planning**: Resource usage forecasting
 
+## Backup & Recovery
+
+### 💾 Database Backup
+- **Automated Backups**: Daily MongoDB backups
+- **Backup Retention**: 30-day backup retention policy
+- **Point-in-time Recovery**: Restore to specific timestamps
+- **Cross-region Replication**: Geographic backup distribution
+
+### 🔄 Disaster Recovery
+- **Recovery Time Objective (RTO)**: < 4 hours
+- **Recovery Point Objective (RPO)**: < 1 hour
+- **Failover Procedures**: Automated failover systems
+- **Data Integrity Checks**: Regular backup validation
+
+### 📋 Backup Procedures
+```bash
+# Manual database backup
+mongodump --uri="mongodb://localhost:27017/aley_social_media" --out=./backup
+
+# Restore from backup
+mongorestore --uri="mongodb://localhost:27017/aley_social_media" ./backup/aley_social_media
+
+# Automated backup script
+./scripts/backup.sh
+```
+
+### 🗂️ File Storage Backup
+- **User Uploads**: Regular backup of user-generated content
+- **Static Assets**: Versioned asset management
+- **Configuration Files**: Environment configuration backup
+- **Code Repository**: Git-based version control
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
