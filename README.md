@@ -417,6 +417,46 @@ mongorestore --uri="mongodb://localhost:27017/aley_social_media" ./backup/aley_s
 - **v2.0 → v2.1**: Add AI feature integration
 - **Breaking Changes**: Documented in changelog
 
+## Architecture
+
+### 🏗️ System Architecture
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Frontend      │    │   Backend       │    │   Database      │
+│   Angular 19    │◄──►│   Node.js       │◄──►│   MongoDB       │
+│   TypeScript    │    │   Express.js    │    │   Collections   │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         │                       │                       │
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Socket.io     │    │   AI Service    │    │   File Storage  │
+│   Real-time     │◄──►│   Groq API      │    │   Images/Media  │
+│   Communication │    │   Python        │    │   Assets        │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+```
+
+### 🔄 Data Flow
+1. **User Request** → Angular Frontend
+2. **HTTP/WebSocket** → Node.js Backend
+3. **Authentication** → JWT Middleware
+4. **Business Logic** → Service Layer
+5. **Data Access** → MongoDB Database
+6. **Response** → JSON/Socket Event
+
+### 🧩 Component Architecture
+- **Modular Design**: Feature-based modules
+- **Lazy Loading**: Route-based code splitting
+- **Shared Services**: Singleton service pattern
+- **State Management**: RxJS observables
+- **Reactive Forms**: Template-driven and reactive forms
+
+### 🌐 Network Architecture
+- **Load Balancer**: Nginx reverse proxy
+- **API Gateway**: Centralized API management
+- **CDN**: Static asset delivery
+- **WebSocket**: Real-time communication
+- **Database Cluster**: MongoDB replica set
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
