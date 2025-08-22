@@ -37,6 +37,54 @@ Before you begin, ensure you have the following installed on your system:
 - **RAM**: 4GB minimum, 8GB recommended
 - **Storage**: 2GB free space
 
+## Database Setup
+
+### MongoDB Installation & Configuration
+
+1. **Install MongoDB Community Edition**
+   ```bash
+   # On macOS with Homebrew
+   brew tap mongodb/brew
+   brew install mongodb-community
+   
+   # On Windows
+   # Download from https://www.mongodb.com/try/download/community
+   
+   # On Ubuntu
+   sudo apt-get install -y mongodb
+   ```
+
+2. **Start MongoDB Service**
+   ```bash
+   # On macOS
+   brew services start mongodb/brew/mongodb-community
+   
+   # On Windows
+   net start MongoDB
+   
+   # On Linux
+   sudo systemctl start mongod
+   ```
+
+3. **Create Database**
+   ```bash
+   mongosh
+   use aley_social_media
+   db.createCollection("users")
+   db.createCollection("posts")
+   db.createCollection("messages")
+   ```
+
+4. **Set up Environment Variables**
+   ```bash
+   # Create .env file in root directory
+   MONGODB_URI=mongodb://localhost:27017/aley_social_media
+   JWT_SECRET=your-super-secret-jwt-key
+   GROQ_API_KEY=your-groq-api-key
+   NODE_ENV=development
+   PORT=3000
+   ```
+
 ## Development server
 
 To start a local development server, run:
