@@ -49,6 +49,26 @@ This project was generated using Angular CLI version 19.2.6.
 - `POST /api/messages` - Send new message
 - `PUT /api/messages/:id` - Update message
 
+## Testing
+
+### Unit Tests
+```bash
+ng test                    # Run unit tests
+ng test --watch           # Run tests in watch mode
+ng test --code-coverage   # Generate coverage report
+```
+
+### E2E Tests
+```bash
+ng e2e                    # Run end-to-end tests
+ng e2e --watch           # Run E2E tests in watch mode
+```
+
+### Test Coverage
+- **Unit Tests**: 85%+ coverage required
+- **Integration Tests**: All API endpoints covered
+- **E2E Tests**: Critical user flows tested
+
 ## Deployment
 
 ### Production Build
