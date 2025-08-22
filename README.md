@@ -30,6 +30,26 @@ This project was generated using Angular CLI version 19.2.6.
 - **Groq API**: AI model integration
 - **Python**: AI processing scripts
 
+## Security Features
+
+### Authentication & Authorization
+- **JWT Tokens**: Secure token-based authentication
+- **Password Hashing**: bcrypt for password security
+- **Role-based Access**: Admin, moderator, and user roles
+- **Session Management**: Secure session handling
+
+### Data Protection
+- **Input Validation**: Sanitize all user inputs
+- **SQL Injection Prevention**: Parameterized queries
+- **XSS Protection**: Content Security Policy
+- **CSRF Protection**: Cross-site request forgery prevention
+
+### API Security
+- **Rate Limiting**: Prevent API abuse
+- **CORS Configuration**: Controlled cross-origin access
+- **Request Validation**: Validate all incoming requests
+- **Error Handling**: Secure error messages
+
 ## Performance Optimization
 
 ### Frontend Optimization
