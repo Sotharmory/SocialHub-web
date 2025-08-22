@@ -12,6 +12,24 @@ This project was generated using Angular CLI version 19.2.6.
 - **AI Integration**: Smart features powered by AI
 - **Responsive Design**: Mobile-first approach
 
+## Technology Stack
+
+### Frontend
+- **Angular 19**: Latest Angular framework
+- **TypeScript**: Type-safe JavaScript
+- **SCSS/CSS**: Advanced styling
+- **RxJS**: Reactive programming
+
+### Backend
+- **Node.js**: Server runtime
+- **Express.js**: Web framework
+- **MongoDB**: NoSQL database
+- **Socket.io**: Real-time communication
+
+### AI & ML
+- **Groq API**: AI model integration
+- **Python**: AI processing scripts
+
 ## Project Structure
 
 ```
