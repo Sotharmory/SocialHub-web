@@ -61,6 +61,39 @@ export class RegisterComponent implements OnInit {
     };
   }
 
+  /**
+   * Enhanced registration method with validation
+   */
+  async enhancedRegister(): Promise<void> {
+    try {
+      this.loading = true;
+      this.error = '';
+      
+      // Additional validation
+      if (this.registerForm.get('password')?.value !== this.registerForm.get('confirmPassword')?.value) {
+        this.error = 'Passwords do not match';
+        return;
+      }
+
+      if (this.registerForm.get('password')?.value.length < 8) {
+        this.error = 'Password must be at least 8 characters long';
+        return;
+      }
+
+      const result = await this.authService.register(this.registerForm.value);
+      if (result.success) {
+        this.router.navigate(['/auth/verify-email']);
+      } else {
+        this.error = result.message || 'Registration failed';
+      }
+    } catch (error) {
+      console.error('Registration error:', error);
+      this.error = 'An unexpected error occurred';
+    } finally {
+      this.loading = false;
+    }
+  }
+
   onSubmit(): void {
     this.submitted = true;
 
