@@ -30,6 +30,25 @@ This project was generated using Angular CLI version 19.2.6.
 - **Groq API**: AI model integration
 - **Python**: AI processing scripts
 
+## API Documentation
+
+### Authentication Endpoints
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login
+- `POST /api/auth/logout` - User logout
+- `POST /api/auth/forgot-password` - Password reset
+
+### Posts Endpoints
+- `GET /api/posts` - Get all posts
+- `POST /api/posts` - Create new post
+- `PUT /api/posts/:id` - Update post
+- `DELETE /api/posts/:id` - Delete post
+
+### Messages Endpoints
+- `GET /api/messages` - Get conversation messages
+- `POST /api/messages` - Send new message
+- `PUT /api/messages/:id` - Update message
+
 ## Project Structure
 
 ```
