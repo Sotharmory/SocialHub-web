@@ -30,6 +30,25 @@ This project was generated using Angular CLI version 19.2.6.
 - **Groq API**: AI model integration
 - **Python**: AI processing scripts
 
+## Performance Optimization
+
+### Frontend Optimization
+- **Lazy Loading**: Route-based code splitting
+- **Tree Shaking**: Remove unused code
+- **OnPush Strategy**: Optimize change detection
+- **Virtual Scrolling**: Handle large lists efficiently
+
+### Backend Optimization
+- **Database Indexing**: Optimize MongoDB queries
+- **Caching**: Redis for session storage
+- **Compression**: Gzip compression enabled
+- **Connection Pooling**: Efficient database connections
+
+### Build Optimization
+- **Bundle Analysis**: Monitor bundle size
+- **Minification**: Compress production builds
+- **Source Maps**: Debug production issues
+
 ## API Documentation
 
 ### Authentication Endpoints
