@@ -71,4 +71,32 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+
+  /**
+   * Enhanced login method with better error handling
+   */
+  async enhancedLogin(): Promise<void> {
+    try {
+      this.loading = true; // Changed from isLoading to loading
+      this.error = ''; // Changed from errorMessage to error
+      
+      // Validate form before submission
+      if (!this.loginForm.valid) {
+        this.error = 'Please fill in all required fields'; // Changed from errorMessage to error
+        return;
+      }
+
+      const result = await this.authService.login(this.loginForm.value);
+      if (result.success) {
+        this.router.navigate(['/dashboard']);
+      } else {
+        this.error = result.message || 'Login failed'; // Changed from errorMessage to error
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      this.error = 'An unexpected error occurred'; // Changed from errorMessage to error
+    } finally {
+      this.loading = false; // Changed from isLoading to loading
+    }
+  }
 } 
