@@ -388,6 +388,35 @@ mongorestore --uri="mongodb://localhost:27017/aley_social_media" ./backup/aley_s
 - **Configuration Files**: Environment configuration backup
 - **Code Repository**: Git-based version control
 
+## API Versioning
+
+### 🔄 Version Strategy
+- **Current Version**: v2.1
+- **Versioning Scheme**: Semantic versioning (SemVer)
+- **Backward Compatibility**: 2 major versions supported
+- **Deprecation Policy**: 6-month deprecation notice
+
+### 📡 API Endpoints by Version
+
+#### v2.1 (Current)
+- `GET /api/v2.1/posts` - Enhanced posts with AI features
+- `POST /api/v2.1/auth/login` - Multi-factor authentication
+- `GET /api/v2.1/fundraising/campaigns` - Advanced campaign management
+
+#### v2.0 (Supported)
+- `GET /api/v2.0/posts` - Basic posts functionality
+- `POST /api/v2.0/auth/login` - Standard authentication
+- `GET /api/v2.0/messages` - Real-time messaging
+
+#### v1.0 (Deprecated)
+- `GET /api/v1.0/posts` - Legacy posts (deprecated Dec 2024)
+- `POST /api/v1.0/auth/login` - Basic auth (deprecated Dec 2024)
+
+### 🔧 Migration Guide
+- **v1.0 → v2.0**: Update authentication endpoints
+- **v2.0 → v2.1**: Add AI feature integration
+- **Breaking Changes**: Documented in changelog
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
