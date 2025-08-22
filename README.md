@@ -16,6 +16,27 @@ SocialHub is a comprehensive social media application that combines traditional 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+### Required Software
+- **Node.js** (v18.0.0 or higher) - [Download here](https://nodejs.org/)
+- **npm** (v8.0.0 or higher) - Comes with Node.js
+- **Angular CLI** (v19.0.0 or higher) - Install with `npm install -g @angular/cli`
+- **MongoDB** (v5.0 or higher) - [Download here](https://www.mongodb.com/try/download/community)
+
+### Optional Tools
+- **Git** - For version control
+- **VS Code** - Recommended IDE with Angular extensions
+- **Postman** - For API testing
+- **MongoDB Compass** - GUI for MongoDB
+
+### System Requirements
+- **OS**: Windows 10+, macOS 10.15+, or Linux Ubuntu 18.04+
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 2GB free space
+
 ## Development server
 
 To start a local development server, run:
